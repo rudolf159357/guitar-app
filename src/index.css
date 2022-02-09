@@ -1,13 +1,142 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-image: url("./img/purple.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #bbb;
+  margin-top: 1em; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+/*  GENERAL  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;  
+  padding: 0;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #bbb;
+}
+
+
+/*  CLASSES and ID  */
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  display: flex;
+  margin-bottom: 1em;
+
+}
+
+.navbar .d-flex {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight:lighter;
+  font-size: 3em;
+}
+
+.navbar .navigation {
+  list-style-type: none;
+  margin-left: 2.5em;
+  display:flex;
+  align-items: center;
+}
+
+.navbar .nav-item {
+  display: inline-block;
+  margin: 0 1em;
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+
+.navbar .nav-item:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #eee;
+}
+
+
+/*  CONTENT */
+
+.content {
+  margin-top: 6em; 
+  margin-left: 5em;
+}
+
+.content  .place {
+  font-weight: bolder;
+  font-size: 0.8em;
+  display: block;
+  margin: 1em 0;
+}
+
+.content  .title {
+  color: #fff;
+  font-size: 4em;
+  font-family: "Times New Roman", Geneva, Tahoma, sans-serif;
+  width: 100%;
+}
+
+.content  .text {
+  font-size: 1em;
+  margin: 2.5em 0;
+}
+
+.btn {
+  padding: 1em;
+  font-weight: bolder;
+  margin: 1em 2em 1em 0;
+  border: none;
+  border-radius: 2em;
+}
+
+.btn:hover {
+  border: 1px solid #eee;
+}
+
+.try-btn:hover {
+  border: 1px solid #fff;
+}
+
+.try-btn {
+  color: #a50bec;
+  background-image: linear-gradient(to right, #f8f800, gold, rgb(219, 191, 34));
+  ;
+}
+
+
+.watch-btn {
+  background-image: url("./img/purple.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #d5d500;
+}
+
+.scroll-btn {
+  margin-top: 10em;
+  background-image: url("./img/purple.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #bbb;
 }
